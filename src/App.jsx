@@ -40,16 +40,14 @@ export const App = () => {
             >
               <td>
                 {good === selected ? (
-                  <td>
-                    <button
-                      onClick={() => setSelected('')}
-                      data-cy="RemoveButton"
-                      type="button"
-                      className="button is-info"
-                    >
-                      -
-                    </button>
-                  </td>
+                  <button
+                    onClick={() => setSelected('')}
+                    data-cy="RemoveButton"
+                    type="button"
+                    className="button is-info"
+                  >
+                    -
+                  </button>
                 ) : (
                   <button
                     onClick={() => setSelected(good)}
